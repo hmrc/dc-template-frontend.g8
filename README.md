@@ -9,7 +9,7 @@ How to create a new project based on the template?
 * Agree on a service name
 * Run the following command replacing the relevant elements to match your service name
 
-    `g8 {GITHUB_USER}/dc-template-frontend --serviceName="Some Service Frontend" --serviceUrlPrefix="some-service-fronten-url" --serviceTargetPort="9999" --package="uk.gov.hmrc.someservicefrontend" -o some-service-frontend`
+    `g8 hmrc/dc-template-frontend --serviceName="Some Service Frontend" --serviceUrlPrefix="some-service-fronten-url" --serviceTargetPort="9999" --package="uk.gov.hmrc.someservicefrontend" -o some-service-frontend`
     
 and then
     
