@@ -30,7 +30,7 @@ If your build fails due to wartremover errors, please report it to your team if 
 
 It should then be listening on port $serviceTargetPort$
 
-    browse http://localhost:$serviceTargetPort$/serviceUrlPrefix
+    browse http://localhost:$serviceTargetPort$/serviceUrlPrefix/hello-world
 
 Swagger endpoint should be located here:
 
