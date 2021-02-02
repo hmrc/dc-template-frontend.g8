@@ -6,12 +6,12 @@ if [[ -f ./build.sbt ]] && [[ -d ./src/main/g8 ]]; then
     echo ${TEMPLATE}
     mkdir -p target/sandbox
     cd target/sandbox
-    sudo rm -r some-servicefrontend
-    g8 file://../../../${TEMPLATE} --serviceName="Some Service Frontend" --serviceTargetPort="9999" --serviceTitle="Some Service Title" --package="uk.gov.hmrc.someservicefrontend" -o some-service-frontend "$@"
+    sudo rm -r some-service-frontend
+    g8 file://../${TEMPLATE} --serviceName="Some Service Frontend" --serviceTargetPort="9999" --serviceTitle="Some Service Title" --package="uk.gov.hmrc.someservicefrontend" -o some-service-frontend "$@"
     cd some-service-frontend
     git init
-	git add .
-	git commit -m start
+    git add .
+    git commit -m start
     sbt test it:test
 
 else
