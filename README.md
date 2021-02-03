@@ -9,12 +9,12 @@ How to create a new project based on the template?
 * Agree on a service name
 * Run the following command replacing the relevant elements to match your service name
 
-    `g8 hmrc/dc-template-frontend --serviceName="Some Service Frontend" --serviceTargetPort="9999" -o some-service-frontend`
+	`g8 hmrc/dc-template-frontend --serviceName="Some Service Frontend" --serviceTargetPort="9999" -o some-service-frontend`
     
 and then
     
-    cd some-service-frontend
-    git init
+	cd some-service-frontend
+	git init
 	git add .
 	git commit -m start
   
