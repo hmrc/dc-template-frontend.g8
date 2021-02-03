@@ -51,10 +51,10 @@ lazy val microservice = Project(appName, file("."))
     majorVersion := 0,
     scalaVersion := "2.12.12",
     name := appName,
-    RoutesKeys.routesImport += "$package$.models._",
+    RoutesKeys.routesImport += "uk.gov.hmrc.$serviceNameNoSpaceLowercase$.models._",
     libraryDependencies ++= AppDependencies.compile ++ AppDependencies.test,
     TwirlKeys.templateImports ++= Seq(
-      "$package$.config.AppConfig",
+      "uk.gov.hmrc.$serviceNameNoSpaceLowercase$.config.AppConfig",
       "uk.gov.hmrc.govukfrontend.views.html.components._",
       "uk.gov.hmrc.govukfrontend.views.html.helpers._",
       "uk.gov.hmrc.hmrcfrontend.views.html.components._",
@@ -146,7 +146,7 @@ lazy val microservice = Project(appName, file("."))
   .settings(wartremoverSettings: _*)
   .settings(
     buildInfoKeys := Seq[BuildInfoKey](name, version, scalaVersion, sbtVersion),
-    buildInfoPackage := "$package$"
+    buildInfoPackage := "uk.gov.hmrc.$serviceNameNoSpaceLowercase$"
   )
 
 lazy val compileScalastyle = taskKey[Unit]("compileScalastyle")

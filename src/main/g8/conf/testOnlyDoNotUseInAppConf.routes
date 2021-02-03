@@ -12,4 +12,4 @@
 # Add all the application routes to the prod.routes file
 ->          /                       prod.Routes
 
-GET         /$serviceUrlPrefix$/api/schema.json        $package$.controllers.swagger.ApiSpecsController.specs
+GET         /$serviceNameHyphen$/api/schema.json        uk.gov.hmrc.$serviceNameNoSpaceLowercase$.controllers.swagger.ApiSpecsController.specs

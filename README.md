@@ -9,7 +9,7 @@ How to create a new project based on the template?
 * Agree on a service name
 * Run the following command replacing the relevant elements to match your service name
 
-    `g8 hmrc/dc-template-frontend --serviceName="Some Service Frontend" --serviceUrlPrefix="some-service-fronten-url" --serviceTargetPort="9999" --package="uk.gov.hmrc.someservicefrontend" -o some-service-frontend`
+    `g8 hmrc/dc-template-frontend --serviceName="Some Service Frontend" --serviceTargetPort="9999" -o some-service-frontend`
     
 and then
     
@@ -53,9 +53,6 @@ What is in the template?
 Assuming the command above 
 the template will supply the following values for the placeholders:
 
-    $packaged$ -> uk/gov/hmrc/someservicefrontend
-	$package$ -> uk.gov.hmrc.someservicefrontend
-	$packageSuffix$ -> someservicefrontend
 	$serviceNameCamel$ -> SomeServiceFrontend
 	$serviceNamecamel$ -> someServiceFrontend
 	$serviceNameNoSpaceLowercase$ -> someservicefrontend
@@ -65,8 +62,6 @@ the template will supply the following values for the placeholders:
 	$serviceNameHyphen$ -> some-service-frontend
 	$serviceNameLowercase$ -> some service frontend
 	$serviceNameUppercase$ -> SOME SERVICE FRONTEND
-	$serviceName$ -> Some Service Frontend
 	$serviceTargetPort$ -> 9999
-	$serviceUrlPrefix$ -> some-service-fronten-url
 
 and produce the folders and files as shown below:
