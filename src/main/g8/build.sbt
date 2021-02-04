@@ -72,7 +72,7 @@ lazy val microservice = Project(appName, file("."))
     // Use the silencer plugin to suppress warnings
     scalacOptions ++= Seq(
       "-P:silencer:pathFilters=target/.*",
-      s"-P:silencer:sourceRoots=${baseDirectory.value.getCanonicalPath}",
+      s"-P:silencer:sourceRoots=\${baseDirectory.value.getCanonicalPath}",
       "-P:wartremover:excluded:/conf/app.routes",
       "-P:silencer:pathFilters=app.routes",
       "-P:wartremover:traverser:org.wartremover.warts.Unsafe",

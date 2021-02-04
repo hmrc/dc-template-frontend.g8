@@ -38,7 +38,7 @@ class ApiSpecsController @Inject()(
   lazy val swagger = Action { _ =>
     generator
       .generate("prod.routes")
-      .fold(e => InternalServerError(s"Couldn't generate swagger. ${e.getMessage()}"), s => Ok(Json.prettyPrint(s)))
+      .fold(e => InternalServerError(s"Couldn't generate swagger. \${e.getMessage()}"), s => Ok(Json.prettyPrint(s)))
   }
 
   def specs: Action[AnyContent] = swagger

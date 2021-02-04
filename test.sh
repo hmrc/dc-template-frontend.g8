@@ -32,14 +32,12 @@ initialize_repo() {
 }
 
 run_test() {
-	echo "INFO: Changing Directory to "$SANDBOX"/"$REPO_NAME""
+	echo "INFO: Changing directory to "$SANDBOX"/"$REPO_NAME""
 	cd "$SANDBOX"/"$REPO_NAME"
-
-	echo "INFO: Test 1 :: STARTING: $REPO_NAME tests"
+	echo "INFO: Starting $REPO_NAME tests"
 	sbt clean test
-	echo "INFO: Test 1 :: COMPLETED: $REPO_NAME tests"
+	echo "INFO: Completed $REPO_NAME tests"
 }
-
 
 if [[ -f ./build.sbt ]] && [[ -d ./src/main/g8 ]]; then
 	setup_sandbox

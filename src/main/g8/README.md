@@ -2,7 +2,7 @@
 
 # $serviceNameHyphen$
 
-$serviceTitle$
+$serviceName$
 
 ## Running the tests
 
@@ -23,18 +23,18 @@ If your build fails due to wartremover errors, please report it to your team if 
 
 ## Running the app locally
 
-	source ../servicemanager/bin/activate
+    source ../servicemanager/bin/activate (or to whichever allows you to enable your pyenv for service manager)
     sm --start DC_ALL
     sm --stop $serviceNameSnake$ 
-    sbt run "$serviceTargetPort$ -Dplay.http.router=testOnlyDoNotUseInAppConf.Routes"
+    sbt run $serviceTargetPort$ -Dplay.http.router=testOnlyDoNotUseInAppConf.Routes
 
 It should then be listening on port $serviceTargetPort$
 
-    browse http://localhost:$serviceTargetPort$/serviceUrlPrefix/hello-world
+    browse `http://localhost:$serviceTargetPort$/$serviceNameHyphen$/hello-world`
 
 Swagger endpoint should be located here:
 
-	http://localhost:$serviceTargetPort$/serviceUrlPrefix/api/schema.json
+	`http://localhost:$serviceTargetPort$/$serviceNameHyphen$/api/schema.json`
 
 ### License
 
