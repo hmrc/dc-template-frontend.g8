@@ -4,6 +4,7 @@ A [Giter8](http://www.foundweekends.org/giter8/) template for creating a HMRC Di
 How to create a new project based on the template?
 --
 
+* Before generating the project, make sure to use the blank repo creation template when using the jenkins job to create a new repository
 * Install g8 commandline tool (http://www.foundweekends.org/giter8/setup.html)
 * Go to the directory where you want to create the template
 * Agree on a service name
