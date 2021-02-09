@@ -10,6 +10,12 @@ How to create a new project based on the template?
 * Run the following command replacing the relevant elements to match your service name
 
 	`g8 hmrc/dc-template-frontend --serviceName="Some Service Frontend" --serviceTargetPort="9999" -o some-service-frontend`
+
+	*NOTE* If for some reason you're having difficulty running giter8 against github (key errors and the likes), try the following after cloning the repo locally:
+
+	`g8 file://../dc-template-frontend.g8 --serviceName="Some Service Frontend" --serviceTargetPort="9999" -o target/sandbox/some-service-frontend`
+
+	After which your project will be generated here: `target/sandbox/some-service-frontend`
     
 and then
     
