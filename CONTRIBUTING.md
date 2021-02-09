@@ -22,18 +22,17 @@ We may already have what you’re planning to do in our backlog, already be work
 
 Communicating early can also help with design decisions and direction for your approach, increasing the chance of us accepting your work.
 
-Please come and talk to us in our [Slack channel](https://hmrcdigital.slack.com/archives/team-scaffolders) in the first instance.  Once we've discussed your idea, we'll probably ask you to [raise an issue](https://github.com/hmrc/hmrc-frontend-scaffold.g8/issues/new) (using our [Issue template](.github/ISSUE_TEMPLATE.md)) before starting work.
+Please come and talk to us in our [Slack channel](https://hmrcdigital.slack.com/archives/team-digital-contact) in the first instance.  Once we've discussed your idea, we'll probably ask you to [raise an issue](https://github.com/hmrc/dc-template-frontend.g8/issues/new) (using our [Issue template](.github/ISSUE_TEMPLATE.md)) before starting work.
 
 ## Contributing code
 
-Once you've identified (or created) an [issue](https://github.com/hmrc/hmrc-frontend-scaffold.g8/issues) to work on, please follow these guidelines to contribute code:
+Once you've identified (or created) an [issue](https://github.com/hmrc/dc-template-frontend.g8/issues) to work on, please follow these guidelines to contribute code:
 
 * Fork the repository
 * Write tests along with your code
 * Add logical, atomic commits with [good commit messages](#commit-messages)
-* Raise your Pull Request against the `develop` branch using our [Pull Request template](.github/PULL_REQUEST_TEMPLATE.md)
+* Raise your Pull Request using our [Pull Request template](.github/PULL_REQUEST_TEMPLATE.md)
 * We will review and offer any feedback
-* Once merged to `develop`, we will coordinate a merge into `master` and a release
 
 ## Commits
 
