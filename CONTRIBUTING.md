@@ -1,4 +1,4 @@
-# Contributing Guidelines for hmrc-frontend-scaffold.g8
+# Contributing Guidelines for dc-template-frontend.g8
 
 Hi!  Thanks for taking the time to contribute to the [HMRC Multichannel Digital Tax Platform](https://hmrc.github.io) (MDTP)
 
